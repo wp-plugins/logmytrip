@@ -7,8 +7,8 @@ Requires at least: 2.6
 Tested up to: 3.1
 Stable tag: trunk
 
-Posts are plotted on a Google map as points on a route in date order.
-Just add the shortcode [logmytripmap] to a page to see your map appear.
+Viewing your posts as a route plotted on a Google map is simple with this plugin.
+Just add the shortcode [logmytripmap] to a page to see the map appear.
 
 == Description ==
 
@@ -41,7 +41,7 @@ It's only one trip per user, but it's easy to create an additional user using an
 
 The LogMyTrip plugin works with, but does not require, the Geolocation plugin.
 
-Note: This plugin plots ALL posts that have associated geolocation information in date order for the default (post_author = 1) user. Points without geolocation data, or for other users, will not be plotted. However, you can switch to a different user by creating a cookie called 'tid' on the root of your site with a value equal to the ID required; e.g. Cookie: tid=4 for post_author 4.
+= Note: This plugin plots ALL posts that have associated geolocation information in date order for the default (post_author = 1) user. Points without geolocation data, or for other users, will not be plotted. However, you can switch to a different user by creating a cookie called 'tid' on the root of your site with a value equal to the ID required; e.g. Cookie: tid=4 for post_author 4. =
 
 == Screenshots ==
 
@@ -49,11 +49,9 @@ Note: This plugin plots ALL posts that have associated geolocation information i
 
 == Changelog ==
 
-1.7 readme.txt updated to clarify a) Installation b) EXIF read on LogMyTrip.co.uk version c) Q&A's d) screenshot-1.jpg
-1.6 Initial non beta release in plugin form.
+= 1.6 Initial non beta release in plugin form. readme.txt updated to clarify installation and use =
 
 == Upgrade Notice ==
 
-1.7 Changes to readme.txt only.
 To upgrade, simply overwrite the existing logmytrip directory with the newer files
 
