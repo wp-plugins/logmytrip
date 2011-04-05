@@ -8,7 +8,7 @@ Tested up to: 3.1
 Stable tag: trunk
 
 Viewing your posts as a route plotted on a Google map is simple with this plugin.
-Just add the shortcode [logmytripmap] to a page to see the map appear.
+Just add the shortcode [logmytripmap] to a page to see the map.
 
 == Description ==
 
@@ -21,7 +21,7 @@ Hovering over the address when viewing individual posts reveals a map of the pos
 1. Upload the 'logmytrip' directory to the '/wp-content/plugins/' directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Create a page and add the shortcode [logmytripmap] anywhere on the page.
-4. Add photo's to your blog either directly into your text or as attachments.
+4. Add posts and geolocate them on a Google map. Posts can include photo's, either directly in the text or as attachments.
 
 == Frequently Asked Questions ==
 
