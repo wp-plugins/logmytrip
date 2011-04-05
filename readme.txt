@@ -25,19 +25,27 @@ Hovering over the address when viewing individual posts reveals a map of the pos
 
 == Frequently Asked Questions ==
 
-Q.Can I upload pictures directly from my mobile and have them show up on a LogMyTrip map?
-A.You can upload your pictures using Wordpress for iPhone, Android, Blackberry or Nokia. Geolocate your post using these apps and then it will show up on a LogMyTrip map.
+= Can I upload pictures directly from my mobile and have them show up on a LogMyTrip map? =
 
-Q.Does the plugin read EXIF (latitude/longitude) data from my photo and use it to plot my location?
-A.It does on the <a href="http://www.LogMyTrip.co.uk">www.LogMyTrip.co.uk</a> site, but not using the plugin alone.
+You can upload your pictures using Wordpress for iPhone, Android, Blackberry or Nokia. Geolocate your post using these apps and then it will show up on a LogMyTrip map.
 
-Q.Can I create more than one trip on the <a href="http://www.LogMyTrip.co.uk">www.LogMyTrip.co.uk</a> website?
-A.It's only one trip per user, but it's easy to create an additional user using an alternative email address, then use it to create another trip.
+= Does the plugin read EXIF (latitude/longitude) data from my photo and use it to plot my location? =
 
-Q.Does the LogMyTrip plugin work with the Geolocation plugin?
-A.The LogMyTrip plugin works with, but does not require, the Geolocation plugin.
+It does on the <a href="http://www.LogMyTrip.co.uk">www.LogMyTrip.co.uk</a> site, but not using the plugin alone.
+
+= Can I create more than one trip on the <a href="http://www.LogMyTrip.co.uk">www.LogMyTrip.co.uk</a> website? =
+
+It's only one trip per user, but it's easy to create an additional user using an alternative email address, then use it to create another trip.
+
+= Does the LogMyTrip plugin work with the Geolocation plugin? =
+
+The LogMyTrip plugin works with, but does not require, the Geolocation plugin.
 
 Note: This plugin plots ALL posts that have associated geolocation information in date order for the default (post_author = 1) user. Points without geolocation data, or for other users, will not be plotted. However, you can switch to a different user by creating a cookie called 'tid' on the root of your site with a value equal to the ID required; e.g. Cookie: tid=4 for post_author 4.
+
+== Screenshots ==
+
+1. Example of the LogMyTrip map in use.
 
 == Changelog ==
 
@@ -46,10 +54,6 @@ Note: This plugin plots ALL posts that have associated geolocation information i
 
 == Upgrade Notice ==
 
-1.7 
-Changes to readme.txt only.
+1.7 Changes to readme.txt only.
 To upgrade, simply overwrite the existing logmytrip directory with the newer files
 
-== Screenshots ==
-
-1. Example of the LogMyTrip map in use.
