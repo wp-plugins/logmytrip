@@ -41,7 +41,7 @@ It's only one trip per user, but it's easy to create an additional user using an
 
 The LogMyTrip plugin works with, but does not require, the Geolocation plugin.
 
-= Note: This plugin plots ALL posts that have associated geolocation information in date order for the default (post_author = 1) user. Points without geolocation data, or for other users, will not be plotted. However, you can switch to a different user by creating a cookie called 'tid' on the root of your site with a value equal to the ID required; e.g. Cookie: tid=4 for post_author 4. =
+= Please Note: = This plugin plots ALL posts that have associated geolocation information in date order for the default (post_author = 1) user. Points without geolocation data, or for other users, will not be plotted. However, you can switch to a different user by creating a cookie called 'tid' on the root of your site with a value equal to the ID required; e.g. Cookie: tid=4 for post_author 4. 
 
 == Screenshots ==
 
