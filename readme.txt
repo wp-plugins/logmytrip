@@ -1,10 +1,9 @@
 === LogMyTrip ===
 Contributors: johnwaters, frsh, mdawaffe, automattic
 Tags: travel, adventure travel, maps, google map, route maps, trip, travel, journey, route
-Tested with Wordpress version: 3.1
 Donate link: http://www.LogMyTrip.co.uk
 Requires at least: 2.6
-Tested up to: 3.1
+Tested up to: 3.1.1
 Stable tag: trunk
 
 Viewing your posts as a route plotted on a Google map is simple with this plugin.
