@@ -3,7 +3,7 @@
 Plugin Name: LogMyTrip
 Plugin URI: http://www.LogMyTrip.co.uk
 Description: Display posts as map icons linked by a route on a Google map.
-Version: 1.6
+Version: 1.8
 Author: John Waters
 Author URI: http://www.LogMyTrip.co.uk
 License: GPL2
@@ -168,7 +168,10 @@ function logtripmap() {
    } else {
 	echo 'var image = "http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png";';
    }
-   echo 'var myOptions = {mapTypeId: google.maps.MapTypeId.HYBRID}
+   echo 'var myOptions = {mapTypeId: google.maps.MapTypeId.HYBRID,
+streetViewControl: false,
+scaleControl: true,
+scaleControlOptions: { position: google.maps.ControlPosition.LEFT_BOTTOM }}
    var map = new google.maps.Map(document.getElementById("mainmap"),myOptions);
    var latlngbounds = new google.maps.LatLngBounds( );
    var route = new Array();
@@ -258,7 +261,7 @@ function location_inner_custom_box() {
 		<input id="location-load" type="button" class="button locationadd" value="Search" tabindex="3" />
 		<input type="hidden" id="location-latitude" name="location-latitude" />
 		<input type="hidden" id="location-longitude" name="location-longitude" />
-                <div id="location-map" style="border:solid 1px #c6c6c6;width:400px;height:300px;margin-top:5px;"></div>
+                <div id="location-map" style="border:solid 1px #c6c6c6;width:600px;height:380px;margin-top:5px;"></div>
 	';
 }
 
@@ -296,15 +299,19 @@ function location_save_postdata($post_id) {
   $latitude = cleancoordinate($_POST['location-latitude']);
   $longitude = cleancoordinate($_POST['location-longitude']);
   $address = reverseGeocode($latitude, $longitude);
-  
-  if((cleancoordinate($latitude) != '') && (cleancoordinate($longitude)) != '') {
-  	update_post_meta($post_id, 'geo_latitude', $latitude);
-  	update_post_meta($post_id, 'geo_longitude', $longitude);
-  	
-  	if(esc_html($address) != '') {
-  		update_post_meta($post_id, 'geo_address', $address);
+ 
+  if( (cleancoordinate($latitude) != '') && (cleancoordinate($longitude) != '') ) {
+	if(get_post_meta($post_id, 'fromPic', true)) {
+		delete_post_meta($post_id, 'fromPic');
 	} else {
-  		update_post_meta($post_id, 'geo_address', 'Address not found');
+		update_post_meta($post_id, 'geo_latitude', $latitude);
+		update_post_meta($post_id, 'geo_longitude', $longitude);
+
+		if(esc_html($address) != '') {
+			update_post_meta($post_id, 'geo_address', $address);
+		} else {
+			update_post_meta($post_id, 'geo_address', 'Address not found');
+		}
 	}
   }
  } 
@@ -318,7 +325,7 @@ function adminhead() {
 	$lmtzoom = 11;
 	?>
 		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript">
 		 	var $j = jQuery.noConflict();
 			$j(function() {
@@ -449,8 +456,8 @@ function adminhead() {
 }
 
 function add_lmt_div() {
-	$width = 400;
-	$height = 300;
+	$width = 460;
+	$height = 320;
 	echo '<div id="map" class="location-map" style="width:'.$width.'px;height:'.$height.'px;"></div>';
 }
 

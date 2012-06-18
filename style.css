@@ -2,7 +2,7 @@
 .location-map { border: solid 1px #999; }
 #map { background: #fff; border: solid 1px #999; position: absolute; top:0px; left:0px; padding: 20px; visibility: hidden; }
 #mapwrap { padding: 20px; }
-#mainmap { height: 600px }
-#mainmap img { max-width: 100%; }
+#mainmap { height: 600px; }
+#mainmap img { max-width: none; }
 #content { color: black; }
 #content img { max-width: 690px; }
