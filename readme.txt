@@ -4,7 +4,7 @@ Tags: travel, adventure travel, maps, google map, route maps, trip, travel, jour
 Donate link: http://www.LogMyTrip.co.uk
 Requires at least: 2.6
 Tested up to: 3.1.1
-Stable tag: trunk
+Stable tag: 1.6
 
 Viewing your posts as a route plotted on a Google map is simple with this plugin.
 Just add the shortcode [logmytripmap] to a page to see the map.
