@@ -3,7 +3,7 @@ Contributors: johnwaters, frsh, mdawaffe, automattic
 Tags: travel, adventure travel, maps, google map, route maps, trip, travel, journey, route
 Donate link: http://www.LogMyTrip.co.uk
 Requires at least: 2.6
-Tested up to: 3.4
+Tested up to: 3.9
 Stable tag: 1.8
 
 Viewing your posts as a route plotted on a Google map is simple with this plugin.
