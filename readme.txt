@@ -1,5 +1,5 @@
 === LogMyTrip ===
-Contributors: johnwaters, frsh, mdawaffe, automattic
+Contributors: johnwaters, frsh
 Tags: travel, adventure travel, maps, google map, route maps, trip, travel, journey, route
 Donate link: http://www.LogMyTrip.co.uk
 Requires at least: 2.6
