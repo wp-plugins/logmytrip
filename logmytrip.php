@@ -480,16 +480,20 @@ function google_maps($posts) {
 			var myOptions = {
 		      zoom: '.$lmtzoom.',
 		      center: center,
+                        streetViewControl: false,
 		      mapTypeId: google.maps.MapTypeId.HYBRID
 		    };
 		    var map = new google.maps.Map(document.getElementById("map"), myOptions);
 		    var marker = new google.maps.Marker({
 					position: center, 
-					map: map}); 
-			
-			var allowDisappear = true;
-			var cancelDisappear = false;
-		    
+					map: map});
+
+                        setTimeout(function() {
+                                allowDisappear = true; 
+                                cancelDisappear = false;
+                                $j("#map").css("display", "none");
+                        },10);
+
 			$j(".location-link").mouseover(function(){
 				$j("#map").stop(true, true);
 				var lat = $j(this).attr("name").split(",")[0];
