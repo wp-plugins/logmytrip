@@ -2,9 +2,9 @@
 Contributors: johnwaters, frsh
 Tags: travel, adventure travel, maps, google map, route maps, trip, travel, journey, route
 Donate link: http://www.LogMyTrip.co.uk
-Requires at least: 2.6
-Tested up to: 3.4
-Stable tag: 1.8
+Requires at least: 3.1
+Tested up to: 4.1
+Stable tag: 1.9
 
 Viewing your posts as a route plotted on a Google map is simple with this plugin.
 Just add the shortcode [logmytripmap] to a page to see the map.
@@ -51,6 +51,7 @@ The LogMyTrip plugin works with, but does not require, the Geolocation plugin.
 = 1.6 Initial non beta release in plugin form. readme.txt updated to clarify installation and use =
 = 1.7 Deleted =
 = 1.8 Update to increase hover map size and fix some css interaction problems with other plugins =
+= 1.9 Update to work with latest version of google maps api =
 
 == Upgrade Notice ==
 
