@@ -3,7 +3,7 @@
 Plugin Name: LogMyTrip
 Plugin URI: http://www.LogMyTrip.co.uk
 Description: Display posts as map icons linked by a route on a Google map.
-Version: 1.8
+Version: 1.9
 Author: John Waters
 Author URI: http://www.LogMyTrip.co.uk
 License: GPL2
